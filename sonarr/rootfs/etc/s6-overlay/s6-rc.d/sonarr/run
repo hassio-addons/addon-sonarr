@@ -1,0 +1,10 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: Sonarr
+# Runs Sonarr
+# ==============================================================================
+
+bashio::log.info 'Starting Sonarr...'
+
+exec /opt/bin/Sonarr -nobrowser -data=/config
