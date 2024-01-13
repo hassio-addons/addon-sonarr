@@ -30,7 +30,9 @@ RUN \
   && echo -e "UpdateMethod=docker\nBranch=master\nPackageVersion=${BUILD_VERSION}\nPackageAuthor=Home Assistant Community Add-ons" \
     > /opt/package_info \
   \
-  && rm -f -r /tmp/*
+  && rm -f -r \
+    /tmp/* \
+    /opt/bin/Sonarr.Update
 
 # Copy root filesystem
 COPY rootfs /
