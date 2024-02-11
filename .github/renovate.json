@@ -30,8 +30,9 @@
       "matchStrings": [
         "ARG SONARR_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
-      "datasourceTemplate": "github-releases",
+      "datasourceTemplate": "github-tags",
       "depNameTemplate": "Sonarr/Sonarr",
+      "versioningTemplate": "loose",
       "extractVersionTemplate": "^v(?<version>.*)$"
     }
   ],
