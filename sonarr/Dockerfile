@@ -6,7 +6,7 @@ FROM ${BUILD_FROM}
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
-ARG SONARR_VERSION=4.0.5.1710
+ARG SONARR_VERSION=4.0.6.1805
 ARG BUILD_ARCH=amd64
 ARG BUILD_VERSION=dev
 ENV XDG_CONFIG_HOME="/config/xdg"
